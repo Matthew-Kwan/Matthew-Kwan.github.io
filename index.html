@@ -1,28 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <!-- ^ the viewport meta tag is to make your webpage responsive according to screen size -->
-    <title>Matthew Kwan</title>
-    <!-- ^ your webpage's title -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <!-- ^ where we link our CSS file to our webpage -->
-  </head>
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!--END GOOGLE FONTS-->
 
-  <body>
-    <div>
-      <img src="profile.png" />
-      <h1>Matthew Kwan</h1>
-      <h2>I'm a Software Engineer.</h2>
-      <a href="https://github.com/matthew-kwan"> Github </a>
+  <!--STYLESHEETS-->
+  <!-- <link rel="stylesheet" href="dist/spectre.min.css">
+  <link rel="stylesheet" href="spectre-exp.min.css">
+  <link rel="stylesheet" href="spectre-icons.min.css"> -->
+  <link href="style.css" rel="stylesheet">
+  <link href="dist/spectre-edit.css" rel="stylesheet">
+  <!--END STYLESHEETS-->
+
+  <title>Matthew Kwan</title>
+</head>
+
+<body>
+
+  <!-- WELCOME PAGE -->
+  <div class="container welcome-page">
+    <div class="columns welcome-div">
+      <div class="column col-4" id="welcome-left">
+        <h1 id=intro-header> Hey, I'm Matthew 👋</h2>
+        <p id="welcome-subtitle"> I'm a software developer with a passion for developing products with the users at the core.</p>
+        <p id="welcome-anchor"> <a class="subtitle-link" href="#about-header">/about</a>
+            <a class="subtitle-link" href="#projects-header">/projects</a> 
+            <a class="subtitle-link" href="https://github.com/Matthew-Kwan">/github</a>  
+            <a class="subtitle-link" href="https://www.linkedin.com/in/matthewkykwan/">/linkedin</a>  </p>
+      </div>
+      <div class="column col-7 welcome-image-div">
+      </div>
     </div>
+  </div>
+  <!-- END OF WELCOME PAGE -->
 
-    <script src="script.js"></script>
-    <!-- ^ where we link our JS file to our webpage (we don't need to worry about this for now!) -->
-  </body>
+  <!-- ABOUT PAGE -->
+  <div class="container about-page">
+    <div class="columns about-div">
+      <div class="column col-5" id="about-left">
+        <h1 id="about-header">About</h1>
+        <p>Hi, I'm Matthew and welcome to my website! I was born and raised in Toronto, Canada.</p>
+         
+        <p>
+          Currently, I'm working as a software developer at a major hospital network where I'm building tools to 
+          <strong>increase the effiency of the healthcare system</strong> and to <strong>improve patient outcomes</strong>.
+        </p> 
 
+        <p> I'm focused on continuing to grow as a software developer, and one day hope to make a substantial impact in healthcare and mental wellness. </p>
+      </div>
+
+      <div class="column col-5" id="about-right">
+
+      </div>
+    </div>
+  </div>
+  <!-- END OF ABOUT PAGE -->
+
+    <!-- PROJECTS PAGE -->
+    <div class="container projects-page">
+      <div class="columns projects-div">
+        <div class="column col-5" id="projects-left">
+          <h1 id="projects-header">Projects</h1>
+          <p> WIP </p>
+        </div>
+      </div>
+    </div>
+    <!-- END OF PROJECTS PAGE -->
+</body>
 </html>
