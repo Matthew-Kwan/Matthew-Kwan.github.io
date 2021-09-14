@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--GOOGLE FONTS-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="spectre-exp.min.css">
   <link rel="stylesheet" href="spectre-icons.min.css"> -->
   <link href="style.css" rel="stylesheet">
-  <link href="dist/spectre-edit.css" rel="stylesheet">
+  <link href="bulma.css" rel="stylesheet">
+  <!-- <link href="dist/spectre-edit.css" rel="stylesheet"> -->
   <!--END STYLESHEETS-->
 
   <title>Matthew Kwan</title>
@@ -24,53 +25,93 @@
 <body>
 
   <!-- WELCOME PAGE -->
-  <div class="container welcome-page">
+  <div class="section welcome-page">
     <div class="columns welcome-div">
-      <div class="column col-4" id="welcome-left">
-        <h1 id=intro-header> Hey, I'm Matthew 👋</h2>
+
+      <div class="column is-one-third" id="welcome-left">
+        <h1 id=intro-header> Hi, I'm Matthew 👋</h2>
         <p id="welcome-subtitle"> I'm a software developer with a passion for developing products with the users at the core.</p>
         <p id="welcome-anchor"> <a class="subtitle-link" href="#about-header">/about</a>
             <a class="subtitle-link" href="#projects-header">/projects</a> 
             <a class="subtitle-link" href="https://github.com/Matthew-Kwan">/github</a>  
             <a class="subtitle-link" href="https://www.linkedin.com/in/matthewkykwan/">/linkedin</a>  </p>
       </div>
-      <div class="column col-7 welcome-image-div">
+
+      <div class="column is-two-thirds welcome-image-div">
       </div>
+
     </div>
   </div>
   <!-- END OF WELCOME PAGE -->
 
   <!-- ABOUT PAGE -->
-  <div class="container about-page">
-    <div class="columns about-div">
-      <div class="column col-5" id="about-left">
-        <h1 id="about-header">About</h1>
-        <p>Hi, I'm Matthew and welcome to my website! I was born and raised in Toronto, Canada.</p>
-         
-        <p>
-          Currently, I'm working as a software developer at a major hospital network where I'm building tools to 
-          <strong>increase the effiency of the healthcare system</strong> and to <strong>improve patient outcomes</strong>.
-        </p> 
+  <div class="section">
 
-        <p> I'm focused on continuing to grow as a software developer, and one day hope to make a substantial impact in healthcare and mental wellness. </p>
-      </div>
+    <div class="container">
+      <div class="columns is-gapless about-div">
 
-      <div class="column col-5" id="about-right">
+        <div class="column is-half">
+          <div class="box">
+            <h1 id="about-header">About</h1>
+            <p>Hi, I'm Matthew and welcome to my website 😄!</p>
+            
+            <p>
+              Currently, I'm working as a software developer 💻 at a major hospital network in Toronto, Canada 🍁 - where I'm building AI-centric tools to 
+              <strong>increase the efficiency of the healthcare system</strong> and to <strong>improve patient outcomes</strong>.
+            </p> 
 
-      </div>
+            <p> I'm focused on continuing to grow as a software developer, and I'm actively pursuing my dream of making waves 🌊 in healthcare and mental wellness. </p>
+          </div>
+        </div>
+
+        <div class="column is-half">
+          <p> Image </p>
+        </div>
+
+
+      </div>  
     </div>
   </div>
   <!-- END OF ABOUT PAGE -->
 
-    <!-- PROJECTS PAGE -->
-    <div class="container projects-page">
-      <div class="columns projects-div">
-        <div class="column col-5" id="projects-left">
+  <!-- PROJECTS PAGE -->
+  <div class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-full">
           <h1 id="projects-header">Projects</h1>
-          <p> WIP </p>
         </div>
       </div>
+
+      <!-- PROJECT LIST -->
+
+      <div class="columns">
+
+        <div class="column is-half">
+          <div class="box project-card">
+            <h2 class="project-card-header"> Ocean </h2>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto nisi voluptate consectetur atque, ipsa praesentium magnam totam, 
+                explicabo dicta minus, iure repellendus repellat libero harum reprehenderit possimus. Nobis, eum? 
+            </p>
+          
+            <div>
+              <a class="github-link" href="https://github.com/Matthew-Kwan/ocean"> /github </a>
+            </div>
+
+          </div> 
+        </div>
+        
+        <div class="column is-half">
+          <div class="box project-card">
+            Test
+          </div> 
+        </div>
+        
+      </div>
+
     </div>
-    <!-- END OF PROJECTS PAGE -->
+  </div>
+  <!-- END OF PROJECTS PAGE -->
 </body>
 </html>
