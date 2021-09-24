@@ -435,4 +435,17 @@ template {
   color: #596e27;
   font-weight: 600;
   margin-bottom: 0px;
+  justify-content: flex-start;
+}
+
+.language-div{
+    float: right;
+}
+
+.language-text {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    background-color: #606b43;
+    color: white;
+    font-weight: 400;
 }
