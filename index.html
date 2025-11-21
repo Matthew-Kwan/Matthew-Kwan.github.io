@@ -11,115 +11,113 @@
   <!--END GOOGLE FONTS-->
 
   <!--STYLESHEETS-->
-  <!-- <link rel="stylesheet" href="dist/spectre.min.css">
-  <link rel="stylesheet" href="spectre-exp.min.css">
-  <link rel="stylesheet" href="spectre-icons.min.css"> -->
   <link href="style.css" rel="stylesheet">
-  <link href="bulma.css" rel="stylesheet">
-  <!-- <link href="dist/spectre-edit.css" rel="stylesheet"> -->
   <!--END STYLESHEETS-->
 
-  <title>Matthew Kwan</title>
+  <title>Matthew Kwan | Software Developer</title>
 </head>
 
 <body>
 
-  <!-- WELCOME PAGE -->
-  <div class="section welcome-page">
-    <div class="columns welcome-div">
-
-      <div class="column is-one-third" id="welcome-left">
-        <h1 id=intro-header> Hi, I'm Matthew 👋</h2>
-        <p id="welcome-subtitle"> I'm a software developer with a passion for developing products with the users at the core.</p>
-        <p id="welcome-anchor"> <a class="subtitle-link" href="#about-header">/about</a>
-            <a class="subtitle-link" href="#projects-header">/projects</a> 
-            <a class="subtitle-link" href="https://github.com/Matthew-Kwan">/github</a>  
-            <a class="subtitle-link" href="https://www.linkedin.com/in/matthewkykwan/">/linkedin</a>  </p>
-      </div>
-
-      <div class="column is-two-thirds welcome-image-div">
-      </div>
-
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="nav-logo">Matthew Kwan</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="https://github.com/Matthew-Kwan" class="nav-link" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/matthewkykwan/" class="nav-link" target="_blank">LinkedIn</a></li>
+      </ul>
     </div>
-  </div>
-  <!-- END OF WELCOME PAGE -->
+  </nav>
 
-  <!-- ABOUT PAGE -->
-  <div class="section">
-
+  <!-- HERO SECTION -->
+  <section class="hero">
     <div class="container">
-      <div class="columns is-gapless about-div">
+      <div class="hero-content">
+        <span class="hero-greeting">Hi, I'm Matthew 👋</span>
+        <h1 class="hero-title">Building products with users at the core.</h1>
+        <p class="hero-subtitle">
+          I'm a software developer passionate about creating efficient, user-centric solutions that make a real impact.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#about" class="btn btn-outline">More About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="column is-half">
-          <div class="box">
-            <h1 id="about-header">About</h1>
-            <p>Hi, I'm Matthew and welcome to my website 😄!</p>
-            
-            <p>
-              Currently, I'm working as a software developer 💻 at a major hospital network in Toronto, Canada 🍁 - where I'm building AI-centric tools to 
-              <strong>increase the efficiency of the healthcare system</strong> and to <strong>improve patient outcomes</strong>.
-            </p> 
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hi, I'm Matthew! I'm a software developer. I currently work at Amazon.
+          </p>
+          <p>
+            I specialize in engineering systems that operate at <strong>Amazon's massive scale</strong>, prioritizing <strong>reliability</strong> and <strong>maintainability</strong>. My approach combines a strong technical foundation with deep <strong>customer obsession</strong>, ensuring that every solution drives positive, tangible impact for users.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="img/profile.png" alt="Matthew Kwan" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <p> I'm focused on continuing to grow as a software developer, and I'm actively pursuing my dream of making waves 🌊 in healthcare and mental wellness. </p>
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-card">
+          <h3 class="project-title">Ocean</h3>
+          <p class="project-desc">
+            A full-stack application built to demonstrate modern web capabilities. Features a robust backend and interactive frontend.
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
           </div>
-        </div>
+          <div class="project-links">
+            <a href="https://github.com/Matthew-Kwan/ocean" class="project-link" target="_blank">View Code →</a>
+          </div>
+        </article>
 
-        <div class="column is-half">
-          <p> Image </p>
-        </div>
+        <!-- Project 2 (Placeholder replaced with example) -->
+        <article class="project-card">
+          <h3 class="project-title">Healthcare Analytics</h3>
+          <p class="project-desc">
+            AI-driven analytics dashboard for hospital resource management. (Confidential/Internal Tool Demo)
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">React</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link" style="opacity: 0.5; cursor: not-allowed;">Internal Tool</span>
+          </div>
+        </article>
 
-
-      </div>  
+      </div>
     </div>
-  </div>
-  <!-- END OF ABOUT PAGE -->
+  </section>
 
-  <!-- PROJECTS PAGE -->
-  <div class="section">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
-      <div class="columns">
-        <div class="column is-full">
-          <h1 id="projects-header">Projects</h1>
-        </div>
-      </div>
-
-      <!-- PROJECT LIST -->
-
-      <div class="columns">
-
-        <div class="column is-half">
-          <div class="box project-card">
-            <h2 class="project-card-header"> Ocean </h2>
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto nisi voluptate consectetur atque, ipsa praesentium magnam totam, 
-                explicabo dicta minus, iure repellendus repellat libero harum reprehenderit possimus. Nobis, eum? 
-            </p>
-          
-            <div class="project-card-footer">
-                <a class="github-link" href="https://github.com/Matthew-Kwan/ocean"> /github </a>
-
-                <div class="language-div">
-                    <span class="language-text">React</span>
-                    <span class="language-text">Node.js</span>
-                    <span class="language-text">Express</span>
-                    <span class="language-text">Mongo DB</span>
-                </div>
-
-            </div>
-
-          </div> 
-        </div>
-        
-        <div class="column is-half">
-          <div class="box project-card">
-            Test
-          </div> 
-        </div>
-        
-      </div>
-
+      <p>&copy; 2025 Matthew Kwan.</p>
     </div>
-  </div>
-  <!-- END OF PROJECTS PAGE -->
+  </footer>
+
 </body>
 </html>
